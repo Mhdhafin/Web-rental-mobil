@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  height: 100vh;
+  background-position: center;
+  background-image: url(/dist/img/tank.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+nav {
+  z-index: 9999;
+}
+
+.layanan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 2rem;
+  top: 50%;
+  margin-bottom: 50px;
+  margin-top: 200px;
+  z-index: 1;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  opacity: 0.4;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.card:hover,
+.card-brands:hover,
+.rent {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+/* .rent {
+  height: 450px;
+} */
+
+.rent img {
+  height: 260px;
+}
+.overlay {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  overflow: visible;
+  width: 100%;
+  height: 120px;
+  z-index: 1;
+  -webkit-transform: skewY(4deg);
+  -moz-transform: skewY(4deg);
+  -ms-transform: skewY(4deg);
+  -o-transform: skewY(4deg);
+  transform: skewY(3deg);
+  background-color: #fff;
+}
+
+.card-brands {
+  height: 250px;
+}
