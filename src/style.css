@@ -9,7 +9,7 @@
 .hero {
   height: 100vh;
   background-position: center;
-  background-image: url(/dist/img/tank.jpg);
+  background-image: url('/dist/img/tank.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 0;
